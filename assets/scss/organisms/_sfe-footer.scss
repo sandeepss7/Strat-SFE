@@ -131,9 +131,14 @@
             gap: 18px;
         }
 
-        &__link,
         &__copyright {
             font-size: 14px;
+        }
+
+        &__link {
+            span {
+                font-size: 14px;
+            }
         }
     }
 }
