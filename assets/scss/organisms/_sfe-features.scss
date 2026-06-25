@@ -1,6 +1,11 @@
 .sfe-features {
     padding: 40px 0;
 
+    .sfe-head {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
     &__grid {
         display: flex;
         flex-wrap: wrap;
@@ -56,5 +61,179 @@
         font-size: 16px;
         line-height: 22px;
         color: #000;
+    }
+
+    // sfe-managementfeatures module's styling
+    &--applications {
+
+        .sfe-features__grid {
+            gap: 34px 28px;
+        }
+
+        .sfe-features__card {
+            flex: 0 0 calc(33.333% - 19px);
+            border: 0;
+            border-radius: 12px;
+            padding: 22px 18px;
+            min-height: 110px;
+            box-shadow:
+                0 3px 8px rgba(0, 0, 0, 0.12),
+                0 8px 18px rgba(0, 0, 0, 0.08);
+
+            &:hover {
+                transform: translateY(-4px);
+                box-shadow:
+                    0 6px 14px rgba(0, 0, 0, 0.16),
+                    0 12px 24px rgba(0, 0, 0, 0.10);
+            }
+        }
+
+        .sfe-features__icon {
+            width: 48px;
+            height: 48px;
+            min-width: 48px;
+            border-radius: 50%;
+            background: #efefef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+
+            img {
+                width: 28px;
+                height: 28px;
+                object-fit: contain;
+                display: block;
+            }
+        }
+
+        .sfe-features__iconwrap {
+            gap: 16px;
+            margin-bottom: 14px;
+        }
+
+        .sfe-features__iconwrap h3 {
+            font-size: 24px;
+            line-height: 1.2;
+        }
+
+        .sfe-features__content p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #000;
+        }
+    }
+}
+
+@include tablet-pro {
+    .sfe-features {
+
+        &__iconwrap h3 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__content p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__iconwrap {
+            align-items: center;
+        }
+    }
+
+    .sfe-features--applications {
+        .sfe-features__iconwrap h3 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}
+
+@include tablet {
+    .sfe-features {
+        .sfe-head {
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        &__iconwrap h3 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__iconwrap {
+            align-items: center;
+        }
+
+        &__content p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__card {
+            flex: 0 0 calc(33% - 14px);
+        }
+    }
+
+    .sfe-features--applications {
+
+        .sfe-features__card {
+            flex: 0 0 calc(50% - 14px);
+        }
+
+        .sfe-features__iconwrap h3 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}
+
+@include mobile {
+    .sfe-features {
+        .sfe-head {
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        &__iconwrap h3 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__content p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__card {
+            flex: 0 0 calc(100%);
+        }
+
+        &__iconwrap {
+            align-items: center;
+        }
+    }
+
+    .sfe-features--applications {
+
+        .sfe-features__card {
+            flex: 0 0 100%;
+        }
+
+        .sfe-features__grid {
+            gap: 20px;
+        }
+
+        .sfe-features__iconwrap h3 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .sfe-features__content p {
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
 }
