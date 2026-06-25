@@ -1,0 +1,15 @@
+.sfe-stakeholder {
+    .sfe-head {
+        text-align: center;
+    }
+    &__cardsout {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__card {
+        background-color: #F8F8F8;
+        border-radius: 16px;
+        border: 1px solid #F8F8F8;
+    }
+}
