@@ -1,6 +1,11 @@
 .sfe-features {
     padding: 40px 0;
 
+    .sfe-head {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
     &__grid {
         display: flex;
         flex-wrap: wrap;
@@ -56,5 +61,66 @@
         font-size: 16px;
         line-height: 22px;
         color: #000;
+    }
+}
+
+@include tablet-pro {
+    .sfe-features {
+
+        &__iconwrap h3 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__content p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+@include tablet {
+    .sfe-features {
+        .sfe-head {
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        &__iconwrap h3 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__content p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__card {
+            flex: 0 0 calc(33% - 14px);
+        }
+    }
+}
+
+@include mobile {
+    .sfe-features {
+        .sfe-head {
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        &__iconwrap h3 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__content p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__card {
+            flex: 0 0 calc(100%);
+        }
     }
 }
