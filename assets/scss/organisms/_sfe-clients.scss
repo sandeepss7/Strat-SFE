@@ -28,7 +28,7 @@
 
         img {
             display: block;
-            width: 75%;
+            width: 85%;
             object-fit: contain;
         }
     }
@@ -48,9 +48,13 @@
         .sfe-head {
             font-size: 28px;
         }
-        
+
         &__item {
             flex: 0 0 calc(25% - 4.5px);
+        }
+
+        &__item img {
+            width: 95%;
         }
     }
 }
@@ -69,6 +73,10 @@
 
         &__grid {
             justify-content: center;
-        } 
+        }
+
+        &__item img {
+            width: 95%;
+        }
     }
 }
