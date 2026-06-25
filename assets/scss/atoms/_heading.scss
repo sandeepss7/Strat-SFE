@@ -7,3 +7,9 @@
         color: #D92127;
     }
 }
+
+@include mobile {
+    .sfe-head {
+        font-size: 24px;
+    }
+}
