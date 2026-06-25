@@ -6,6 +6,10 @@
         padding-bottom: 45px
     }
 
+    &__mbdivider {
+        display: none;
+    }
+
     &__wrapper {
         display: flex;
         align-items: center;
@@ -50,7 +54,7 @@
         justify-content: center;
     }
 
-    &__divider img {
+    &__lgdivider {
         display: block;
         width: auto;
         height: 170px;
@@ -104,6 +108,48 @@
             font-size: 14px;
             line-height: 20px;
             min-height: 80px;
+        }
+    }
+}
+
+@include mobile {
+    .sfe-impact {
+        padding: 40px 0;
+
+        .sfe-head {
+            font-size: 28px;
+            padding-bottom: 20px;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__value {
+            font-size: 24px;
+            line-height: 1;
+            min-height: 24px;
+        }
+
+        &__title {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__desc {
+            font-size: 14px;
+            line-height: 20px;
+            min-height: 48px;
+        }
+
+        &__lgdivider {
+            display: none;
+        }
+
+        &__mbdivider {
+            display: block;
+            width: 70%;
         }
     }
 }

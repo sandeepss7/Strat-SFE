@@ -1,0 +1,60 @@
+.sfe-features {
+    padding: 40px 0;
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    &__card {
+        flex: 0 0 calc(25% - 14px);
+        border: 1px solid #E5E5E5;
+        border-radius: 16px;
+        background: #fff;
+        padding: 20px;
+        min-height: 108px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: all 0.3s ease;
+    }
+
+    &__card:hover {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    &__iconwrap {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        width: 36px;
+    }
+
+    &__icon img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    &__iconwrap h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        color: #000;
+    }
+
+    &__content p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000;
+    }
+}
