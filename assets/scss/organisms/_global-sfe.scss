@@ -186,10 +186,6 @@
 @include mobile {
     .sfe-presence {
 
-        .sfe-head {
-            font-size: 28px;
-        }
-
         &__wrapper {
             flex-direction: column-reverse;
         }

@@ -175,6 +175,9 @@
         &__card {
             flex: 0 0 calc(33% - 14px);
         }
+        &__grid {
+            justify-content: flex-start;
+        }
     }
 
     .sfe-features--applications {
@@ -192,10 +195,6 @@
 
 @include mobile {
     .sfe-features {
-        .sfe-head {
-            font-size: 28px;
-            line-height: 34px;
-        }
 
         &__iconwrap h3 {
             font-size: 14px;

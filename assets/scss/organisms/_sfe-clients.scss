@@ -62,10 +62,6 @@
 @include mobile {
     .sfe-clients {
 
-        .sfe-head {
-            font-size: 28px;
-        }
-
         &__item {
             flex: 0 0 calc(33.33% - 4.5px);
             padding: 0;
