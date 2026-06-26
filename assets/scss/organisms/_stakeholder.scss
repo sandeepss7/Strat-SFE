@@ -1,103 +1,105 @@
 .sfe-stakeholder {
-    .sfe-head {
-        text-align: center;
-    }
-    &__cardsout {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin-top: 32px;
-    }
-    &__card {
-        background-color: #F8F8F8;
-        border-radius: 16px;
-        border: 1px solid #F8F8F8;
-        padding: 12px 20px;
-        width: calc(50% - 24px);
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    }
-    &__cardhead {
-        color: #000;
-        font-size: 26px;
-        font-weight: 700;
-        text-align: center;
-    }
-    &__cardhead.card2 {
-        color: #fff;
-    }
-    &__contentout {
-        display: flex;
-        gap: 32px;
-        align-items: center;
-        padding-top: 42px;
-        min-height: 102px;
+  overflow: hidden;
+  padding: 40px 0;
+  .sfe-head {
+    text-align: center;
+  }
+  &__cardsout {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 32px;
+  }
+  &__card {
+    background-color: #f8f8f8;
+    border-radius: 16px;
+    border: 1px solid #f8f8f8;
+    padding: 12px 20px;
+    width: calc(50% - 24px);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &__cardhead {
+    color: #000;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__cardhead.card2 {
+    color: #fff;
+  }
+  &__contentout {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    padding-top: 42px;
+    min-height: 102px;
 
-        &:last-child {
-            padding-bottom: 32px;
-        }
+    &:last-child {
+      padding-bottom: 32px;
     }
+  }
 
-    &__card.card2 {
-        background-color: #D92127;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  &__card.card2 {
+    background-color: #d92127;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &__eyesvg {
+    width: 35px;
+    img {
+      width: 100%;
     }
-    &__eyesvg {
-        width: 35px;
-        img {
-            width: 100%;
-        }
-    }
-    &__para {
-        color: #D92127;
-        font-size: 20px;
-        font-weight: 500;
+  }
+  &__para {
+    color: #d92127;
+    font-size: 20px;
+    font-weight: 500;
 
-        span {
-            color: #000;
-            font-size: 16px;
-            font-weight: 400;
-        }
+    span {
+      color: #000;
+      font-size: 16px;
+      font-weight: 400;
     }
-    &__para.card2 {
-        color: #fff;
+  }
+  &__para.card2 {
+    color: #fff;
 
-        span {
-            color: #fff;
-        }
+    span {
+      color: #fff;
     }
-    &__svg {
-        background-color: #fff;
-        border-radius: 50%;
-        padding: 10px;
-        width: 60px;
+  }
+  &__svg {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    width: 60px;
     height: 60px;
-        img {
-            width: 40px;
-        }
+    img {
+      width: 40px;
     }
+  }
 }
 
 @include tablet {
-    .sfe-stakeholder {
-        &__para {
-            font-size: 18px;
-        }
-        &__eyesvg {
-            width: 70px;
-        }
+  .sfe-stakeholder {
+    &__para {
+      font-size: 18px;
     }
+    &__eyesvg {
+      width: 70px;
+    }
+  }
 }
 @include mobile {
-    .sfe-stakeholder {
-        &__cardsout {
-            flex-direction: column;
-            gap: 32px;
-        }
-        &__card {
-            width: 100%;
-        }
-        &__cardhead {
-            font-size: 24px;
-        }
+  .sfe-stakeholder {
+    &__cardsout {
+      flex-direction: column;
+      gap: 32px;
     }
+    &__card {
+      width: 100%;
+    }
+    &__cardhead {
+      font-size: 24px;
+    }
+  }
 }

@@ -1,25 +1,26 @@
   const counters = document.querySelectorAll(".count");
 
-    const animateCounter = (counter) => {
-      const target = +counter.dataset.target;
-      const duration = 2000;
-      const startTime = performance.now();
+const animateCounter = (counter) => {
+    const target = +counter.dataset.target;
+    const suffix = counter.dataset.suffix || "%";
+    const duration = 2000;
+    const startTime = performance.now();
 
-      function update(currentTime) {
+    function update(currentTime) {
         const progress = Math.min((currentTime - startTime) / duration, 1);
         const value = Math.floor(progress * target);
 
-        counter.textContent = value + "%";
+        counter.textContent = value + suffix;
 
         if (progress < 1) {
-          requestAnimationFrame(update);
+            requestAnimationFrame(update);
         } else {
-          counter.textContent = target + "%";
+            counter.textContent = target + suffix;
         }
-      }
+    }
 
-      requestAnimationFrame(update);
-    };
+    requestAnimationFrame(update);
+};
 
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
@@ -45,3 +46,4 @@ toggle.addEventListener('click', () => {
 
     toggle.textContent = expanded ? 'Show less' : 'and more';
 });
+

@@ -1,5 +1,6 @@
 .sfe-features {
     padding: 40px 0;
+    overflow: hidden;
 
     .sfe-head {
         text-align: center;
@@ -154,8 +155,8 @@
 @include tablet {
     .sfe-features {
         .sfe-head {
-            font-size: 28px;
-            line-height: 34px;
+            font-size: 36px;
+            line-height: 44px;
         }
 
         &__iconwrap h3 {
