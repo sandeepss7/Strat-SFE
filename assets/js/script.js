@@ -1,4 +1,4 @@
-  const counters = document.querySelectorAll(".count");
+const counters = document.querySelectorAll(".count");
 
 const animateCounter = (counter) => {
     const target = +counter.dataset.target;
@@ -22,18 +22,19 @@ const animateCounter = (counter) => {
     requestAnimationFrame(update);
 };
 
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
         if (entry.isIntersecting) {
-          animateCounter(entry.target);
-          observer.unobserve(entry.target); // Run only once
+            animateCounter(entry.target);
+            observer.unobserve(entry.target);
         }
-      });
-    }, {
-      threshold: 0.5
     });
+}, {
+    threshold: 0.5
+});
 
-    counters.forEach(counter => observer.observe(counter));
+counters.forEach(counter => observer.observe(counter));
+
 const toggle = document.querySelector('.sfe-presence__toggle');
 const hiddenCountries = document.querySelectorAll('.sfe-presence__country--hidden');
 
@@ -47,3 +48,18 @@ toggle.addEventListener('click', () => {
     toggle.textContent = expanded ? 'Show less' : 'and more';
 });
 
+
+/* ===== Select Arrow Rotate ===== */
+document.querySelectorAll(".select-group select").forEach(select => {
+    select.addEventListener("focus", () => {
+        select.parentElement.classList.add("open");
+    });
+
+    select.addEventListener("blur", () => {
+        select.parentElement.classList.remove("open");
+    });
+
+    select.addEventListener("change", () => {
+        select.parentElement.classList.remove("open");
+    });
+});

@@ -12,104 +12,9 @@
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- styles -->
   <title>Document</title>
-
-  <style>
-    .features{
-    padding:60px 20px;
-    background:#fff;
-}
-
-.container{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.feature-item{
-    flex:1;
-    text-align:center;
-    padding:0 20px;
-    position:relative;
-}
-
-.feature-item:not(:last-child)::after{
-    content:"";
-    position:absolute;
-    top:10px;
-    right:0;
-    width:1px;
-    height:100px;
-    background:#ddd;
-}
-
-.icon{
-    font-size:42px;
-    color:#ef5350;
-    margin-bottom:20px;
-}
-
-.feature-item h4{
-    font-size:22px;
-    font-weight:600;
-    color:#222;
-    margin-bottom:6px;
-}
-
-.feature-item p{
-    font-size:22px;
-    font-weight:600;
-    color:#222;
-    line-height:1.3;
-}
-
-/* Responsive */
-@media(max-width:991px){
-
-    .container{
-        flex-wrap:wrap;
-        gap:40px;
-    }
-
-    .feature-item{
-        flex:0 0 calc(50% - 20px);
-    }
-
-    .feature-item:nth-child(2)::after,
-    .feature-item:nth-child(4)::after{
-        display:none;
-    }
-}
-
-@media(max-width:576px){
-
-    .container{
-        flex-direction:column;
-        gap:35px;
-    }
-
-    .feature-item{
-        width:100%;
-    }
-
-    .feature-item::after{
-        display:none;
-    }
-
-    .icon{
-        font-size:36px;
-    }
-
-    .feature-item h4,
-    .feature-item p{
-        font-size:18px;
-    }
-}
-  </style>
 </head>
 
 <body>
@@ -119,7 +24,7 @@
       <div class="sfe-banner__out">
         <div class="sfe-banner__logocontent">
           <div class="sfe-banner__logo">
-            <img src="/assets/images/SFE-logo.png" alt="logo">
+            <img src="/assets/images/SFE-logo.svg" alt="logo">
           </div>
           <div>
             <h2 class="sfe-head">One Platform.</h2>
@@ -130,51 +35,49 @@
               performance analytics, and streamlined execution to drive commercial excellence.</p>
           </div>
           <section class="features">
-    <div class="container">
 
-        <div class="feature-item">
-            <div class="icon">
-                <i class="fa-solid fa-brain"></i>
-            </div>
-            <h4>AI-Powered</h4>
-            <p>Insights</p>
-        </div>
+              <div class="feature-item">
+                <div class="icon">
+                  <img src="/assets/images/A1-Powered-Insights.svg" alt="AI-Powered Icon">
+                </div>
+                <h4>AI-Powered</h4>
+                <p>Insights</p>
+              </div>
 
-        <div class="feature-item">
-            <div class="icon">
-                <i class="fa-solid fa-users"></i>
-            </div>
-            <h4>HCP</h4>
-            <p>Engagement</p>
-        </div>
+              <div class="feature-item">
+                <div class="icon">
+                  <img src="/assets/images/HCP-Engagement.svg" alt="HCP Engagement Icon">
+                </div>
+                <h4>HCP</h4>
+                <p>Engagement</p>
+              </div>
 
-        <div class="feature-item">
-            <div class="icon">
-                <i class="fa-solid fa-bullseye"></i>
-            </div>
-            <h4>Smart Territory</h4>
-            <p>Planning</p>
-        </div>
+              <div class="feature-item">
+                <div class="icon">
+                  <img src="/assets/images/Smart-Territory-Planning.svg" alt="Smart Territory Icon">
+                </div>
+                <h4>Smart Territory</h4>
+                <p>Planning</p>
+              </div>
 
-        <div class="feature-item">
-            <div class="icon">
-                <i class="fa-solid fa-chart-column"></i>
-            </div>
-            <h4>Performance</h4>
-            <p>Analytics</p>
-        </div>
+              <div class="feature-item">
+                <div class="icon">
+                  <img src="/assets/images/performance-illustration.svg" alt="Performance Analytics Icon">
+                </div>
+                <h4>Performance</h4>
+                <p>Analytics</p>
+              </div>
 
-        <div class="feature-item">
-            <div class="icon">
-                <i class="fa-solid fa-share-nodes"></i>
-            </div>
-            <h4>Multi-Channel</h4>
-            <p>Engagement</p>
-        </div>
+              <div class="feature-item">
+                <div class="icon">
+                  <img src="/assets/images/Mufti-Channel-Engagement-1.svg" alt="Multi-Channel Engagement Icon">
+                </div>
+                <h4>Multi-Channel</h4>
+                <p>Engagement</p>
+              </div>
 
-    </div>
-</section>
-          
+          </section>
+
         </div>
         <div class="sfe-banner__formout">
           <div class="form-container">
@@ -183,22 +86,30 @@
             <form action="#" method="POST">
 
               <div class="input-group">
-                <i class="fa-solid fa-user"></i>
+                <div class="form-icon">
+                  <img src="/assets/images/Full-Name.svg" alt="img">
+                </div>
                 <input type="text" placeholder="Full Name" required>
               </div>
 
               <div class="input-group">
-                <i class="fa-solid fa-envelope"></i>
+                <div class="form-icon">
+                  <img src="/assets/images/Email.svg" alt="img">
+                </div>
                 <input type="email" placeholder="Work Email" required>
               </div>
 
               <div class="input-group">
-                <i class="fa-solid fa-building"></i>
+                <div class="form-icon">
+                  <img src="/assets/images/Company.svg" alt="img">
+                </div>
                 <input type="text" placeholder="Company Name" required>
               </div>
 
               <div class="input-group select-group">
-                <i class="fa-solid fa-industry"></i>
+                <div class="form-icon">
+                  <img src="/assets/images/Mufti-Channel-Engagement.svg" alt="img">
+                </div>
                 <select required>
                   <option value="" disabled selected hidden>Industry</option>
                   <option value="tech">Technology</option>
@@ -210,7 +121,9 @@
               </div>
 
               <div class="input-group select-group">
-                <i class="fa-solid fa-user-group"></i>
+                <div class="form-icon">
+                  <img src="/assets/images/HCP-Engagement.svg" alt="img">
+                </div>
                 <select required>
                   <option value="" disabled selected hidden>Sales Team Size</option>
                   <option value="1-10">1 - 10</option>
@@ -237,6 +150,21 @@
   <!-- body content end -->
 
   <!-- scripts -->
+   <!-- <script>
+    document.querySelectorAll(".select-group select").forEach(select => {
+  select.addEventListener("focus", () => {
+    select.parentElement.classList.add("open");
+  });
+
+  select.addEventListener("blur", () => {
+    select.parentElement.classList.remove("open");
+  });
+
+  select.addEventListener("change", () => {
+    select.parentElement.classList.remove("open");
+  });
+});
+   </script> -->
   <script src="../assets/js/jquery.slim.min.js"></script>
   <script src="../assets/js/aos.js"></script>
   <script src="../assets/js/slick.min.js"></script>
