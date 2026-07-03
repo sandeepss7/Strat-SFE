@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ea2839;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #fecb00;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-6 {
+        fill: #34b233;
+      }
+    </style>
+    <clipPath id="clippath">
+      <circle class="cls-3" cx="250" cy="250" r="250"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g class="cls-5">
+      <g>
+        <rect class="cls-4" x="-125.76" y="-.51" width="751.52" height="501.01"/>
+        <rect class="cls-6" x="-125.76" y="166.5" width="751.52" height="334.01"/>
+        <rect class="cls-1" x="-125.76" y="333.5" width="751.52" height="167"/>
+        <g>
+          <polygon id="pt" class="cls-2" points="190.01 267.62 250 83 309.99 267.62 190.01 267.62"/>
+          <polygon id="pt-2" data-name="pt" class="cls-2" points="298.53 302.88 141.48 416.98 201.47 232.36 298.53 302.88"/>
+          <polygon id="pt-3" data-name="pt" class="cls-2" points="231.46 324.67 74.41 210.57 268.54 210.57 231.46 324.67"/>
+          <polygon id="pt-4" data-name="pt" class="cls-2" points="231.46 210.57 425.59 210.57 268.54 324.67 231.46 210.57"/>
+          <polygon id="pt-5" data-name="pt" class="cls-2" points="298.53 232.36 358.52 416.98 201.47 302.88 298.53 232.36"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

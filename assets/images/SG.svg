@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #ed2939;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <circle class="cls-2" cx="250" cy="250" r="250"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g class="cls-4">
+      <g>
+        <path class="cls-1" d="M-16.18-1h802.67v501.99H-16.18V-1Z"/>
+        <path class="cls-3" d="M-16.18-1h802.67v251H-16.18V-1Z"/>
+        <circle class="cls-1" cx="192.54" cy="124.5" r="92.38"/>
+        <circle class="cls-3" cx="234.37" cy="124.5" r="92.38"/>
+        <path id="s" class="cls-1" d="M243.09,47.46l-14.14,43.51,37.01-26.89h-45.75l37.01,26.89-14.14-43.51Z"/>
+        <g id="t">
+          <path id="s-2" data-name="s" class="cls-1" d="M316.36,100.7h-45.75s37.01,26.89,37.01,26.89l-14.14-43.51-14.14,43.51,37.01-26.89Z"/>
+          <path id="s-3" data-name="s" class="cls-1" d="M197.8,186.83l37.01-26.89h-45.75s37.01,26.89,37.01,26.89l-14.14-43.51-14.14,43.51Z"/>
+        </g>
+        <g id="t-2" data-name="t">
+          <path id="s-4" data-name="s" class="cls-1" d="M288.37,186.83l-14.14-43.51-14.14,43.51,37.01-26.89h-45.75s37.01,26.89,37.01,26.89Z"/>
+          <path id="s-5" data-name="s" class="cls-1" d="M169.82,100.7l37.01,26.89-14.14-43.51-14.14,43.51,37.01-26.89h-45.75Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

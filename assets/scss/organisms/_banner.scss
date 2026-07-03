@@ -91,6 +91,11 @@
     -moz-appearance: none;
   }
 
+  .input-group select {
+    width: 300px;
+    cursor: pointer;
+  }
+
   .input-group input::placeholder {
     color: #a0a0a0;
     font-weight: 500;
@@ -105,17 +110,17 @@
     font-weight: 900;
     position: absolute;
     right: 20px;
-    background-image: url('/assets/images/dropdown-angle.svg');
-        height: 30px;
+    background-image: url("/assets/images/dropdown-angle.svg");
+    height: 30px;
     width: 30px;
-     background-size: contain;
-  pointer-events: none;
-  transition: transform 0.3s ease;
+    background-size: contain;
+    pointer-events: none;
+    transition: transform 0.3s ease;
   }
 
   .select-group.open::after {
-  transform: translateY(-5%) rotate(180deg);
-}
+    transform: translateY(-5%) rotate(180deg);
+  }
   .submit-btn {
     width: 100%;
     background-color: #d92127;
@@ -263,8 +268,8 @@
     .form-container {
       padding: 14px 30px;
     }
-    .input-group{
-        padding: 10px;
+    .input-group {
+      padding: 10px;
     }
   }
   .feature-item h4 {

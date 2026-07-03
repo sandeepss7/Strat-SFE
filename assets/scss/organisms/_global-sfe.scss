@@ -93,6 +93,7 @@
 
     img {
       width: 20px;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
     }
   }
 
@@ -192,60 +193,60 @@
     visibility: visible;
   }
 
-  .usa{
-    top:31%;
-    left:9%;
-}
+  .usa {
+    top: 37%;
+    left: 18%;
+  }
 
-.brazil{
-    top:68%;
-    left:25%;
-}
+  .brazil {
+    top: 63%;
+    left: 33%;
+  }
 
-.uk{
-    top:28%;
-    left:45%;
-}
+  .uk {
+    top: 28%;
+    left: 50%;
+  }
 
-.uae{
-    top:42%;
-    left:59%;
-}
+  .uae {
+    top: 40%;
+    left: 63%;
+  }
 
-.india{
-    top:48%;
-    left:67%;
-}
+  .india {
+    top: 44%;
+    left: 69%;
+  }
 
-.malaysia{
-    top:53%;
-    left:79%;
-}
+  .malaysia {
+    top: 53%;
+    left: 77%;
+  }
 
-.singapore{
-    top:60%;
-    left:78%;
-}
+  .singapore {
+    top: 64%;
+    left: 78%;
+  }
 
-.indonesia{
-    top:70%;
-    left:82%;
-}
+  .indonesia {
+    top: 71%;
+    left: 85%;
+  }
 
-.korea{
-    top:42%;
-    left:86%;
-}
+  .korea {
+    top: 37%;
+    left: 78%;
+  }
 
-.japan{
-    top:31%;
-    left:91%;
-}
+  .japan {
+    top: 33%;
+    left: 85%;
+  }
 
-.australia{
-    top:88%;
-    left:93%;
-}
+  .australia {
+    top: 88%;
+    left: 93%;
+  }
   /*  */
 }
 
@@ -380,6 +381,10 @@
 
     &__toggle {
       font-size: 16px;
+    }
+
+    .map-pin img {
+      width: 18px;
     }
   }
 }
